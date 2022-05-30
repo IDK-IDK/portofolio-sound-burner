@@ -1,0 +1,13 @@
+//@include font (35px,light,red);
+//@extend %btn;
+
+@font-face {
+  font-family: OrelegaOne;
+  src: url("../fonts/OrelegaOne-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  min-width: 1920px;
+}
+

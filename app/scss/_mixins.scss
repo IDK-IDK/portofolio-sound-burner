@@ -1,0 +1,6 @@
+@mixin font($size:50px,$fontWeight:bold,$color:blue) {
+  font-size:$size;
+  color:$color;
+  font-weight: $fontWeight;
+  font-family: 'Times', sans-serif;
+}
