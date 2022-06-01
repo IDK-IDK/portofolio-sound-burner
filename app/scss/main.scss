@@ -1,13 +1,134 @@
 //@include font (35px,light,red);
 //@extend %btn;
 
-@font-face {
-  font-family: OrelegaOne;
-  src: url("../fonts/OrelegaOne-Regular.ttf");
-}
+//@font-face {
+//  font-family: OrelegaOne;
+//  src: url("../fonts/OrelegaOne-Regular.ttf");
+//}
+
+@import "colors.scss";
+@import "fonts.scss";
+
 * {
   margin: 0;
   padding: 0;
-  min-width: 1920px;
 }
+
+a   {
+  &:link {text-decoration:none}
+  &:active {text-decoration:none; color: $button}
+
+}
+.wrapper {
+
+  header {
+    box-shadow: 2px 4px 6px 0 $heade-shadow;
+    background-color: $header;
+    height: 90px;
+    width: 100%;
+      .header-grid {
+        display: grid;;
+        grid-template-columns: minmax(50px,405px) 106px minmax(30px,84px) auto minmax(30px,84px) auto minmax(30px,84px) 237.6px minmax(50px,405px);
+        grid-template-rows: auto auto;
+        .lang-switch-container {
+          grid-column: 8;
+          grid-row: 1;
+          justify-self: end;
+          height: 25px;
+          a {
+            &:link {@include Nav-above-font}
+            &.active {
+              position: relative;
+              color:  #000000;
+              &::after {
+                position: absolute;
+                content: " ";
+                width: 14px;
+                height: 2px;
+                background: blue;
+                bottom:0;
+                left: 0;
+                background: #000000;
+              }
+            }
+          }
+        }
+        .logo-container {
+          grid-column: 2;
+          grid-row:2;
+          display: flex;
+          .logo {
+            background: url(../../img/Vector-logo.svg) no-repeat 50% 50%;
+            width: 19.9px;
+            height: 33.4px;
+          }
+          .logo-name {
+            width: 75.5px;
+            height: 37.9px;
+            background: url(../../img/Sound-Burner.svg) no-repeat 50% 50%;
+            margin: 0 0 0 10.6px;
+          }
+        }
+        .search-container {
+          grid-column: 4;
+          grid-row: 2;
+          //margin: 3px 0 0 84px;
+          margin: 3px 0 0 0px;
+          background-color: #ececec;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;;
+          .search {
+            width: 216px;
+            height: 22px;
+            background-color: #ececec;
+            margin-left: 0;
+            @include Search-font;
+            border: none;
+          }
+          .search-icon {
+            width: 44px;
+            height: 44px;
+            background: url(../../img/icon-search.svg) no-repeat 50% 50%;
+            background-color: $bright-yellow;
+          }
+        }
+        .load-song {
+          grid-column:6;
+          grid-row: 2;
+          height: 25px;
+          //margin: 12.5px 0 0 115px;
+          margin: 12.5px 0 0 0;
+          @include But-menu-1-font;
+          justify-self: end;
+        }
+        .btn-menu {
+          grid-column: 8;
+          grid-row: 2;
+          justify-items: end;
+          display: flex;
+          justify-content: end;
+          margin-top: 5px;
+          .btn-enter {
+            width: 86px;
+            height: 40px;
+            margin: 0 11.6px 2px 0;
+            padding: 7.5px 21.5px;
+            border: solid 2px $button;
+            @include But-menu-1-font;;
+          }
+          .btn-register {
+            width: 140px;
+            height: 40px;
+            margin: 0 0 2px 11.6px;
+            background-color: $button;
+            @include But-menu-2-font;
+          }
+        }
+      }
+  }
+}
+
+
+
 
