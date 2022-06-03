@@ -9,7 +9,7 @@ const rename = require('gulp-rename');
  
  
 gulp.task('sassToCSSmin', function() {
-  return gulp.src('app/scss/*.scss')
+  return gulp.src('app/sass/*.sass')
     .pipe(sass({
       errorLogToConsole: true,
       outputStyle: 'compressed'
@@ -24,10 +24,10 @@ gulp.task('sassToCSSmin', function() {
 });
 
 gulp.task('sassToCSS', function() {
-    return gulp.src('app/scss/*.scss')
+    return gulp.src('app/sass/*.sass')
         .pipe(sass({
             errorLogToConsole: true,
-            outputStyle: 'compressed'
+            // outputStyle: 'compressed'
         }))
         .on('error', console.error.bind(console))
         .pipe(autoprefixer({
@@ -53,22 +53,22 @@ gulp.task('copyJS', function() {
     return gulp.src('app/js/*.js')
         .pipe(sass({
             errorLogToConsole: true,
-            outputStyle: 'compressed'
+            // outputStyle: 'compressed'
         }))
         .on('error', console.error.bind(console))
         .pipe(gulp.dest('public/js/'));
 });
  
  
-// gulp.task('synch', function() {
-//   browserSync.init({
-//     server: 'public'
-//   });
-//   browserSync.watch('public/**/*.*').on('change', browserSync.reload);
-// });
+/*gulp.task('synch', function() {
+  browserSync.init({
+    server: 'public'
+  });
+  browserSync.watch('public/!**!/!*.*').on('change', browserSync.reload);
+});*/
  
 gulp.task('watchFiles', function() {
-  gulp.watch('app/scss/*.scss', gulp.parallel('sassToCSS','sassToCSSmin'));
+  gulp.watch('app/sass/*.sass', gulp.parallel('sassToCSS','sassToCSSmin'));
   gulp.watch('app/js/*.js', gulp.parallel('copyJS', "copyJSmin"));
 });
  
