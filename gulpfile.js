@@ -31,7 +31,7 @@ gulp.task('sassToCSS', function() {
         }))
         .on('error', console.error.bind(console))
         .pipe(autoprefixer({
-            overrideBrowserslist: ['last 50 versions'],
+            overrideBrowserslist: ['last 5 versions'],
             cascade: false}))
         .pipe(gulp.dest('public/css/'));
 });

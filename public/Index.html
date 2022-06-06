@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<!--       <meta name="viewport" content="width=device-width, initial-scale=1">-->
-
+    <!--       <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
     <link rel="stylesheet" type="text/css" href="css/colors.min.css">
@@ -16,266 +16,271 @@
 <body>
 <div class="wrapper">
     <header>
-        <ul class="header ">
-            <li class="lang-switch-container">
+        <div class="header ">
+            <div class="lang-switch">
                 <a  href="#">en</a>
                 <a class="active" href="#">ru</a>
-            </li>
-            <li class="logo-container">
-                <div class="logo"></div>
-                <div class="logo-name"></div>
-            </li>
-            <li class="search-container">
-                <input type="search" class="search" placeholder="начните поиск трека исполнителя">
-                <div class="search-icon"></div>
-            </li>
-            <li class="load-song"><a> Загрузить песню</a></li>
-            <li class="btn-menu">
-                <button class="btn-enter" type="submit">Войти</button>
-                <button class="btn-register" type="submit">Регистрация</button>
-            </li>
-        </ul>
+            </div>
+            <ul class="header-rest" >
+                <li class="logo-container">
+                    <div class="logo"></div>
+                    <div class="logo-name"></div>
+                </li>
+                <li class="search-container">
+                    <input type="search" class="search" placeholder="начните поиск трека исполнителя">
+                    <div class="search-icon"></div>
+                </li>
+                <li class="load-song"><div><a> Загрузить песню</a></div></li>
+                <li class="btn-menu">
+                    <button class="btn-enter" type="submit">Войти</button>
+                    <button class="btn-register" type="submit">Регистрация</button>
+                </li>
+            </ul>
+        </div>
     </header>
+    <!--
+        <main>
+
+            <div class="grid-row">
+                <div class="container">
+                    <div class="row-description">
+                        <div class="line"></div>
+                        <span>Chill</span>
+                    </div>
+                    <div class="photo-1"></div>
+                    <div class="song-info">
+                        <span class="song-name ">Never Chill before</span>
+                        <span class="author-name">Pineapple Express</span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row-description">
+                        <div ></div>
+                        <span></span>
+                    </div>
+                    <div class="photo photo-1"></div>
+                    <div class="song-info">
+                        <span class="song-name"> </span>
+                        <span class="author-name"></span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row-description">
+                        <div></div>
+                        <span></span>
+                    </div>
+                    <div class="photo-1"></div>
+                    <div class="song-info">
+                        <span class="song-name"> </span>
+                        <span class="author-name"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="container">
+                    <div class="row-description">
+                        <div class="line"></div>
+                        <span>Party</span>
+                    </div>
+                    <div class=" photo-2"></div>
+                    <div class="song-info">
+                        <span class="song-name ">Never Chill before</span>
+                        <span class="author-name">Pineapple Express</span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row-description">
+                        <div ></div>
+                        <span></span>
+                    </div>
+                    <div class="photo photo-2"></div>
+                    <div class="song-info">
+                        <span class="song-name"> </span>
+                        <span class="author-name"></span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row-description">
+                        <div></div>
+                        <span></span>
+                    </div>
+                    <div class="photo-2"></div>
+                    <div class="song-info">
+                        <span class="song-name"> </span>
+                        <span class="author-name"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="container">
+                    <div class="row-description">
+                        <div class="line"></div>
+                        <span>Workout</span>
+                    </div>
+                    <div class="photo-3"></div>
+                    <div class="song-info">
+                        <span class="song-name ">Never Chill before</span>
+                        <span class="author-name">Pineapple Express</span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row-description">
+                        <div ></div>
+                        <span></span>
+                    </div>
+                    <div class="photo photo-3"></div>
+                    <div class="song-info">
+                        <span class="song-name"> </span>
+                        <span class="author-name"></span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row-description">
+                        <div></div>
+                        <span></span>
+                    </div>
+                    <div class="photo-3"></div>
+                    <div class="song-info">
+                        <span class="song-name"> </span>
+                        <span class="author-name"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="container">
+                    <div class="row-description">
+                        <div class="line"></div>
+                        <span>Sleep</span>
+                    </div>
+                    <div class="photo-4"></div>
+                    <div class="song-info">
+                        <span class="song-name ">Never Chill before</span>
+                        <span class="author-name">Pineapple Express</span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row-description">
+                        <div ></div>
+                        <span></span>
+                    </div>
+                    <div class="photo photo-4"></div>
+                    <div class="song-info">
+                        <span class="song-name"> </span>
+                        <span class="author-name"></span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row-description">
+                        <div></div>
+                        <span></span>
+                    </div>
+                    <div class="photo-4"></div>
+                    <div class="song-info">
+                        <span class="song-name"> </span>
+                        <span class="author-name"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="container">
+                    <div class="row-description">
+                        <div class="line"></div>
+                        <span>Charts: New & hot</span>
+                    </div>
+                    <div class="photo-5"></div>
+                    <div class="song-info">
+                        <span class="song-name ">Never Chill before</span>
+                        <span class="author-name">Pineapple Express</span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row-description">
+                        <div ></div>
+                        <span></span>
+                    </div>
+                    <div class="photo photo-5"></div>
+                    <div class="song-info">
+                        <span class="song-name"> </span>
+                        <span class="author-name"></span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row-description">
+                        <div></div>
+                        <span></span>
+                    </div>
+                    <div class="photo-5"></div>
+                    <div class="song-info">
+                        <span class="song-name"> </span>
+                        <span class="author-name"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="container">
+                    <div class="row-description">
+                        <div class="line"></div>
+                        <span>Charts: Top 50</span>
+                    </div>
+                    <div class="photo-6"></div>
+                    <div class="song-info">
+                        <span class="song-name ">Never Chill before</span>
+                        <span class="author-name">Pineapple Express</span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row-description">
+                        <div ></div>
+                        <span></span>
+                    </div>
+                    <div class="photo photo-6"></div>
+                    <div class="song-info">
+                        <span class="song-name"> </span>
+                        <span class="author-name"></span>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row-description">
+                        <div></div>
+                        <span></span>
+                    </div>
+                    <div class="photo-6"></div>
+                    <div class="song-info">
+                        <span class="song-name"> </span>
+                        <span class="author-name"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    -->
 <!--
-    <main>
-
-        <div class="grid-row">
-            <div class="container">
-                <div class="row-description">
-                    <div class="line"></div>
-                    <span>Chill</span>
-                </div>
-                <div class="photo-1"></div>
-                <div class="song-info">
-                    <span class="song-name ">Never Chill before</span>
-                    <span class="author-name">Pineapple Express</span>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row-description">
-                    <div ></div>
-                    <span></span>
-                </div>
-                <div class="photo photo-1"></div>
-                <div class="song-info">
-                    <span class="song-name"> </span>
-                    <span class="author-name"></span>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row-description">
-                    <div></div>
-                    <span></span>
-                </div>
-                <div class="photo-1"></div>
-                <div class="song-info">
-                    <span class="song-name"> </span>
-                    <span class="author-name"></span>
-                </div>
-            </div>
-        </div>
-        <div class="grid-row">
-            <div class="container">
-                <div class="row-description">
-                    <div class="line"></div>
-                    <span>Party</span>
-                </div>
-                <div class=" photo-2"></div>
-                <div class="song-info">
-                    <span class="song-name ">Never Chill before</span>
-                    <span class="author-name">Pineapple Express</span>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row-description">
-                    <div ></div>
-                    <span></span>
-                </div>
-                <div class="photo photo-2"></div>
-                <div class="song-info">
-                    <span class="song-name"> </span>
-                    <span class="author-name"></span>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row-description">
-                    <div></div>
-                    <span></span>
-                </div>
-                <div class="photo-2"></div>
-                <div class="song-info">
-                    <span class="song-name"> </span>
-                    <span class="author-name"></span>
-                </div>
-            </div>
-        </div>
-        <div class="grid-row">
-            <div class="container">
-                <div class="row-description">
-                    <div class="line"></div>
-                    <span>Workout</span>
-                </div>
-                <div class="photo-3"></div>
-                <div class="song-info">
-                    <span class="song-name ">Never Chill before</span>
-                    <span class="author-name">Pineapple Express</span>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row-description">
-                    <div ></div>
-                    <span></span>
-                </div>
-                <div class="photo photo-3"></div>
-                <div class="song-info">
-                    <span class="song-name"> </span>
-                    <span class="author-name"></span>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row-description">
-                    <div></div>
-                    <span></span>
-                </div>
-                <div class="photo-3"></div>
-                <div class="song-info">
-                    <span class="song-name"> </span>
-                    <span class="author-name"></span>
-                </div>
-            </div>
-        </div>
-        <div class="grid-row">
-            <div class="container">
-                <div class="row-description">
-                    <div class="line"></div>
-                    <span>Sleep</span>
-                </div>
-                <div class="photo-4"></div>
-                <div class="song-info">
-                    <span class="song-name ">Never Chill before</span>
-                    <span class="author-name">Pineapple Express</span>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row-description">
-                    <div ></div>
-                    <span></span>
-                </div>
-                <div class="photo photo-4"></div>
-                <div class="song-info">
-                    <span class="song-name"> </span>
-                    <span class="author-name"></span>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row-description">
-                    <div></div>
-                    <span></span>
-                </div>
-                <div class="photo-4"></div>
-                <div class="song-info">
-                    <span class="song-name"> </span>
-                    <span class="author-name"></span>
-                </div>
-            </div>
-        </div>
-        <div class="grid-row">
-            <div class="container">
-                <div class="row-description">
-                    <div class="line"></div>
-                    <span>Charts: New & hot</span>
-                </div>
-                <div class="photo-5"></div>
-                <div class="song-info">
-                    <span class="song-name ">Never Chill before</span>
-                    <span class="author-name">Pineapple Express</span>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row-description">
-                    <div ></div>
-                    <span></span>
-                </div>
-                <div class="photo photo-5"></div>
-                <div class="song-info">
-                    <span class="song-name"> </span>
-                    <span class="author-name"></span>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row-description">
-                    <div></div>
-                    <span></span>
-                </div>
-                <div class="photo-5"></div>
-                <div class="song-info">
-                    <span class="song-name"> </span>
-                    <span class="author-name"></span>
-                </div>
-            </div>
-        </div>
-        <div class="grid-row">
-            <div class="container">
-                <div class="row-description">
-                    <div class="line"></div>
-                    <span>Charts: Top 50</span>
-                </div>
-                <div class="photo-6"></div>
-                <div class="song-info">
-                    <span class="song-name ">Never Chill before</span>
-                    <span class="author-name">Pineapple Express</span>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row-description">
-                    <div ></div>
-                    <span></span>
-                </div>
-                <div class="photo photo-6"></div>
-                <div class="song-info">
-                    <span class="song-name"> </span>
-                    <span class="author-name"></span>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row-description">
-                    <div></div>
-                    <span></span>
-                </div>
-                <div class="photo-6"></div>
-                <div class="song-info">
-                    <span class="song-name"> </span>
-                    <span class="author-name"></span>
-                </div>
-            </div>
-        </div>
-    </main>
--->
-    <div class="footer-interface"></div>
     <footer>
-        <div class="footer-logo-container">
-            <div class="footer-logo"></div>
-            <div class="footer-logo-name"></div>
-        </div>
-        <div class="footer-social-items">
-            <div class="footer-social-fb"></div>
-            <div class="footer-social-tw"></div>
-            <div class="footer-social-ln"></div>
-        </div>
-        <a class="footer-confidential">Политика конфиденциальности</a>
+        <ul class="footer">
+            <li class="footer-logo-container">
+                <div class="footer-logo"></div>
+                <div class="footer-logo-name"></div>
+            </li>
+            <li class="footer-social-items">
+                <div class="footer-social-fb"></div>
+                <div class="footer-social-tw"></div>
+                <div class="footer-social-ln"></div>
+            </li>
+            <li class="footer-confidential"><a >Политика кон</a><li>
+        </ul>
     </footer>
+-->
 </div>
 
 <script type="text/javascript" src="/public/js/index.css"></script>
