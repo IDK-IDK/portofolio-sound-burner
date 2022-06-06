@@ -1,0 +1,28 @@
+{
+  "name": "sound-burner",
+  "version": "1.0.0",
+  "description": "spotify example",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IDK-IDK/portofolio-sound-burner.git"
+  },
+  "author": "Igor Dzhenkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IDK-IDK/portofolio-sound-burner/issues"
+  },
+  "homepage": "https://github.com/IDK-IDK/portofolio-sound-burner#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.52.1"
+  }
+}

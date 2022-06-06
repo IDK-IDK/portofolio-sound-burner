@@ -1,0 +1,26 @@
+
+%active 
+  position: relative
+  color: $black
+  &::after 
+    position: absolute
+    content: " "
+    width: 14px
+    height: 2px
+    bottom: 0
+    left: 0
+    background: $black
+
+%lang-line
+  &::after
+    content: ""
+    width: 14px
+    height: 2px
+    flex-grow: 0
+    background-color: $black
+    position: absolute
+    left: 0
+
+
+
+
