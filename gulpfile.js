@@ -23,18 +23,18 @@ gulp.task('sassToCSSmin', function() {
     .pipe(gulp.dest('public/css/'));
 });
 
-gulp.task('sassToCSS', function() {
-    return gulp.src('app/sass/*.sass')
-        .pipe(sass({
-            errorLogToConsole: true,
-            // outputStyle: 'compressed'
-        }))
-        .on('error', console.error.bind(console))
-        .pipe(autoprefixer({
-            overrideBrowserslist: ['last 5 versions'],
-            cascade: false}))
-        .pipe(gulp.dest('public/css/'));
-});
+// gulp.task('sassToCSS', function() {
+//     return gulp.src('app/sass/*.sass')
+//         .pipe(sass({
+//             errorLogToConsole: true,
+//             // outputStyle: 'compressed'
+//         }))
+//         .on('error', console.error.bind(console))
+//         .pipe(autoprefixer({
+//             overrideBrowserslist: ['last 5 versions'],
+//             cascade: false}))
+//         .pipe(gulp.dest('public/css/'));
+// });
  
  
 gulp.task('copyJSmin', function() {
@@ -49,16 +49,16 @@ gulp.task('copyJSmin', function() {
     .pipe(gulp.dest('public/js/'));
 });
 
-gulp.task('copyJS', function() {
-    return gulp.src('app/js/*.js')
-        .pipe(sass({
-            errorLogToConsole: true,
-            // outputStyle: 'compressed'
-        }))
-        .on('error', console.error.bind(console))
-        .pipe(gulp.dest('public/js/'));
-});
- 
+// gulp.task('copyJS', function() {
+//     return gulp.src('app/js/*.js')
+//         .pipe(sass({
+//             errorLogToConsole: true,
+//             // outputStyle: 'compressed'
+//         }))
+//         .on('error', console.error.bind(console))
+//         .pipe(gulp.dest('public/js/'));
+// });
+//
  
 /*gulp.task('synch', function() {
   browserSync.init({
@@ -68,8 +68,8 @@ gulp.task('copyJS', function() {
 });*/
  
 gulp.task('watchFiles', function() {
-  gulp.watch('app/sass/*.sass', gulp.parallel('sassToCSS','sassToCSSmin'));
-  gulp.watch('app/js/*.js', gulp.parallel('copyJS', "copyJSmin"));
+  gulp.watch('app/sass/*.sass', gulp.parallel('sassToCSSmin'));
+  gulp.watch('app/js/*.js', gulp.parallel("copyJSmin"));
 });
  
  

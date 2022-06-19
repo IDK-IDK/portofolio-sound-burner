@@ -1,61 +1,78 @@
 
 /*==========  Desktop First  ==========*/
-@media (max-width: 1800px)
-//body
-//  .wrapper
-//    header
-//      .header
-//          .header-rest
-//            .load-song
-//              grid-column: 7/10
-//              justify-self: center
-//
 
-
-/* Large Devices, Wide Screens */
-//@media  (max-width : 1200px)
-
-
-  //grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
-//
-//
-///* Medium Devices, Desktops */
-//@media only screen and (max-width : 992px)
-//
-//
-///* Small Devices, Tablets */
-//@media only screen and (max-width : 768px)
-//
-///* Extra Small Devices, Phones */
-//@media only screen and (max-width : 480px)
-//
-///* Custom, iPhone Retina */
-//@media only screen and (max-width : 320px)
-///**/
-//
-///*==========  Mobile First  ==========*/
-//
-///* Custom, iPhone Retina */
-//@media only screen and (min-width : 320px)
-///**/
-//
-//
-///* Extra Small Devices, Phones */
-//@media only screen and (min-width : 480px)
-///**/
-//
-//
-///* Small Devices, Tablets */
-//@media only screen and (min-width : 768px)
-///**/
-//
-//
-///* Medium Devices, Desktops */
-//@media only screen and (min-width : 992px)
-///**/
-//
-//
-///* Large Devices, Wide Screens */
-//@media only screen and (min-width : 1200px)
-///**/
-//
+@media (max-width: 1020px)
+  html
+    body
+      .global-wrapper
+        .header-color
+          min-height: 310px
+@media (max-width: 1300px)
+  html
+    body
+     .global-wrapper
+        grid-template-columns: 50px auto 50px
+        .wrapper
+          grid-template-columns: repeat(auto-fit,minmax(0px,1fr))
+          grid-column-gap: 10px
+          .btn-menu
+           justify-self: start
+          .container
+           > div:nth-of-type(2)
+             min-width: calc(350px*1.34) !important
+             min-height: calc(246px*1.34)  !important
+@media (max-width: 1030px)
+ html
+   body
+     .global-wrapper
+          grid-template-columns: 50px auto 50px
+@media (max-width: 1020px)
+  html
+    body
+      .global-wrapper
+        .wrapper
+          grid-column-gap: 0
+          .row-container
+            justify-content: center !important
+          .container
+            > div:nth-of-type(2)
+              min-width: calc(350px*1) !important
+              min-height: calc(246px*1)  !important
+          header
+            .header-rest
+              > li
+                margin: 15px 0
+                justify-self: center !important
+                grid-column: 1/13 !important
+              .search-container
+                grid-row: 3
+              .load-song
+                grid-row: 4
+              .btn-menu
+                grid-row: 5
+                margin-left: 0px !important
+                .btn-enter
+                  margin-left: 0px !important
+          footer
+            flex-direction: column
+            justify-content: space-around !important
+@media (max-width: 900px)
+ html
+   body
+     .global-wrapper
+          grid-template-columns: 5px auto 5px
+@media (max-width: 380px)
+  html
+    body
+      .global-wrapper
+        .wrapper
+          .row-container
+              .container
+                min-width: calc(350px*0.7) !important
+                > div:nth-of-type(2)
+                  min-width: calc(350px*0.7)!important
+                  min-height: calc(246px*0.7)  !important
+          header
+            .header-rest
+              .search-container
+                min-width: calc(360px*0.7) !important
